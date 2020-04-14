@@ -1,16 +1,18 @@
 #include <Arduino.h>
 
+#define IO2 2
+
 void setup()
 {
   // put your setup code here, to run once:
-  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(IO2, OUTPUT);
 }
 
 void loop()
 {
   // put your main code here, to run repeatedly:
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(100);
-  digitalWrite(LED_BUILTIN, LOW);
+  digitalWrite(IO2, HIGH);
+  delay(500);
+  digitalWrite(IO2, LOW);
   delay(800);
 }
